@@ -44,8 +44,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/calculator-app:${{ github.sha }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/calculator-app:latest
+             patiljanhvi1115/calculator-app:${{ github.sha }}
+             patiljanhvi1115/calculator-app:latest
 
   deploy:
     needs: build-and-push
